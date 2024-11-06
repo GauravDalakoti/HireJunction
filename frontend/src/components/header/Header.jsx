@@ -51,7 +51,7 @@ function Header() {
         e.preventDefault()
         try {
             console.log(searchQuery);
-            const response = await fetch(`http://localhost:8000/api/v1/jobs/search-jobs?query=${encodeURIComponent(searchQuery)}`)
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/search-jobs?query=${encodeURIComponent(searchQuery)}`)
 
             if (response.ok) {
 
@@ -71,7 +71,7 @@ function Header() {
 
         try {
 
-            const response = await fetch("http://localhost:8000/api/v1/users/logout-user", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/users/logout-user`, {
 
                 method: "POST",
                 credentials: "include",

@@ -14,7 +14,7 @@ function YourJobs() {
 
             try {
 
-                const response = await fetch("http://localhost:8000/api/v1/jobs/get-user-applied-jobs", {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/get-user-applied-jobs`, {
 
                     method: "GET",
                     credentials: "include",

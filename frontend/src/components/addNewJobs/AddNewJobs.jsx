@@ -54,7 +54,7 @@ function AddNewJobs() {
         formData.append("lastApplyDate", jobData.lastApplyDate)
 
         try {
-            const response = await fetch("http://localhost:8000/api/v1/jobs/add-new-job", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/add-new-job`, {
 
                 method: "POST",
                 credentials: "include",

@@ -13,7 +13,7 @@ function JobApplications() {
 
       try {
 
-        const response = await fetch("http://localhost:8000/api/v1/jobs/get-all-job-applications", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/get-all-job-applications`, {
 
           method: "GET",
           credentials: "include",
@@ -44,7 +44,7 @@ function JobApplications() {
 
     try {
 
-      const response = await fetch("http://localhost:8000/api/v1/jobs/accept-job-application", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/accept-job-application`, {
 
         method: "POST",
         credentials: "include",
@@ -74,7 +74,7 @@ function JobApplications() {
 
     try {
 
-      const response = await fetch("http://localhost:8000/api/v1/jobs/reject-job-application", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/reject-job-application`, {
 
         method: "POST",
         credentials: "include",

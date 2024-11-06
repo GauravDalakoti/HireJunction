@@ -20,7 +20,7 @@ function Profile() {
 
             try {
 
-                const response = await fetch("http://localhost:8000/api/v1/users/get-current-user", {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/users/get-current-user`, {
 
                     method: "GET",
                     credentials: "include",
@@ -62,7 +62,7 @@ function Profile() {
 
         try {
 
-            const response = await fetch("http://localhost:8000/api/v1/users/update-user-profile", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/users/update-user-profile`, {
 
                 method: "POST",
                 credentials: "include",

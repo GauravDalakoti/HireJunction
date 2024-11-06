@@ -40,7 +40,7 @@ function JobApplication() {
 
         try {
 
-            const response = await fetch("http://localhost:8000/api/v1/jobs/apply-job", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/apply-job`, {
 
                 method: "POST",
                 credentials: 'include',

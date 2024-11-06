@@ -28,7 +28,7 @@ function SignUp() {
 
             try {
 
-                const response = await fetch("http://localhost:8000/api/v1/reqruiters/register-reqruiter", {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/reqruiters/register-reqruiter`, {
 
                     method: "POST",
                     credentials: "include",
@@ -59,7 +59,7 @@ function SignUp() {
 
             try {
 
-                const response = await fetch("http://localhost:8000/api/v1/users/register-user", {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/users/register-user`, {
 
                     method: "POST",
                     credentials: "include",

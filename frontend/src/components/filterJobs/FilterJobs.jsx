@@ -60,7 +60,7 @@ function FilterJobs() {
 
         try {
 
-            const response = await fetch("http://localhost:8000/api/v1/jobs/filter-jobs", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/filter-jobs`, {
 
                 method: "POST",
                 headers: {

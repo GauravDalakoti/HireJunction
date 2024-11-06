@@ -13,7 +13,7 @@ function ReqruiterAllJobs() {
 
       try {
 
-        const response = await fetch("http://localhost:8000/api/v1/jobs/get-reqruiters-jobs", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/get-reqruiters-jobs`, {
 
           method: "GET",
           credentials: "include",
@@ -47,7 +47,7 @@ function ReqruiterAllJobs() {
 
     try {
 
-      const response = await fetch("http://localhost:8000/api/v1/jobs/remove-job", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/jobs/remove-job`, {
 
         method: "POST",
         credentials: "include",

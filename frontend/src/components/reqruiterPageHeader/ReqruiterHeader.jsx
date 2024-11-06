@@ -14,7 +14,7 @@ function ReqruiterHeader() {
 
         try {
 
-            const response = await fetch("http://localhost:8000/api/v1/reqruiters/logout-reqruiter", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/reqruiters/logout-reqruiter`, {
 
                 method: "POST",
                 credentials: "include",

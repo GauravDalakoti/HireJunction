@@ -35,7 +35,7 @@ function Login() {
 
             try {
 
-                const response = await fetch("http://localhost:8000/api/v1/reqruiters/login-reqruiter", {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/reqruiters/login-reqruiter`, {
 
                     method: "POST",
                     credentials: "include",
@@ -69,7 +69,7 @@ function Login() {
 
             try {
 
-                const response = await fetch("http://localhost:8000/api/v1/users/login-user", {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/users/login-user`, {
 
                     method: "POST",
                     credentials: "include",
