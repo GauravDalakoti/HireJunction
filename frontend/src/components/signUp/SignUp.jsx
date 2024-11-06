@@ -62,7 +62,6 @@ function SignUp() {
                 const response = await fetch(`${import.meta.env.VITE_BACKEND_URI}/api/v1/users/register-user`, {
 
                     method: "POST",
-                    credentials: "include",
                     headers: {
 
                         "Content-Type": "application/json"
