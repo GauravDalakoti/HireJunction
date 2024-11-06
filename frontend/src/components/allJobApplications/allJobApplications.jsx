@@ -19,7 +19,8 @@ function JobApplications() {
           credentials: "include",
           headers: {
 
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
           }
         })
 
@@ -50,7 +51,9 @@ function JobApplications() {
         credentials: "include",
         headers: {
 
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
+
         },
         body: JSON.stringify({ email, _id })
       })
@@ -81,8 +84,8 @@ function JobApplications() {
         headers: {
 
           "Content-Type": "application/json",
-           'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
-          
+          'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
+
         },
         body: JSON.stringify({ email, _id })
       })
