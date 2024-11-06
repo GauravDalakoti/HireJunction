@@ -46,7 +46,6 @@ function JobApplication() {
                 credentials: 'include',
                 headers: {
 
-                    "Content-Type": "multipart/form-data",
                     'Authorization': `Bearer ${localStorage.getItem("userToken")}`
                 },
                 body: formData
