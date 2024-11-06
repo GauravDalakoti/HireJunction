@@ -44,9 +44,9 @@ function JobApplication() {
 
                 method: "POST",
                 credentials: 'include',
-                headers:{
+                headers: {
 
-                     'Authorization': `Bearer ${localStorage.getItem("userToken")}`
+                    'Authorization': `Bearer ${localStorage.getItem("userToken")}`
                 },
                 body: formData
             })

@@ -52,7 +52,7 @@ function Login() {
                     const res = await response.json()
                     console.log(res)
                     dispatch(login({ userData: res.data.loggedInUser }));
-                    localStorage.setItem("reqruiterToken",res.data.reqruiterAccessToken)
+                    localStorage.setItem("reqruiterToken", res.data.reqruiterAccessToken)
                     setLoading(false)
                     navigate("/reqruiter-page")
                 }

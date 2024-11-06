@@ -26,7 +26,8 @@ function Profile() {
                     credentials: "include",
                     headers: {
 
-                        "Content-Type": "appliction/json"
+                        "Content-Type": "appliction/json",
+                        'Authorization': `Bearer ${localStorage.getItem("userToken")}`
                     },
                 })
 
