@@ -5,7 +5,7 @@ import { upload } from "../middlewares/multer.middleware.js"
 
 const router = Router()
 
-router.route("/add-new-job").post(upload.single("companyLogo"), addJob)
+router.route("/add-new-job").post(verifyReqruiterJWT, upload.single("companyLogo"), addJob)
 router.route("/remove-job").post(verifyReqruiterJWT, removeJob)
 router.route("/get-reqruiters-jobs").get(verifyReqruiterJWT, getReqruiterJobs)
 router.route("/get-all-jobs").get(getAllJobs)
