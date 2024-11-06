@@ -52,7 +52,7 @@ function Login() {
                     const res = await response.json()
                     console.log(res)
                     dispatch(login({ userData: res.data.loggedInUser }));
-                    localStorage.setItem("reqruiterToken", JSON.stringify(res.data.reqruiterAccessToken))
+                    localStorage.setItem("reqruiterToken",res.data.reqruiterAccessToken)
                     setLoading(false)
                     navigate("/reqruiter-page")
                 }
@@ -85,7 +85,7 @@ function Login() {
                     toast.success("Login Successfully")
                     const res = await response.json()
                     console.log(res)
-                    localStorage.setItem("userToken", JSON.stringify(res.data.accessToken))
+                    localStorage.setItem("userToken", res.data.accessToken)
                     dispatch(login({ userData: res.data.loggedInUser }))
                     setLoading(false)
                     navigate("/")
