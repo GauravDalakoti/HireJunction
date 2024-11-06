@@ -1,0 +1,16 @@
+import search from "./search.png"
+import logo from "./logo.png"
+import fileSelector from "./fileSelector.png"
+import job from "./job.jpg"
+import facebook from "./facebook.png"
+import instagram from "./instagram.png"
+import twitter from "./twitter.png"
+import linkedin from "./linkedin.png"
+import user from "./user.png"
+import downarrow from "./downarrow.jpg"
+import edit from "./edit.png"
+import loading from "./loading.gif"
+import menu from "./menu.png"
+import close from "./close.png"
+
+export const assets = { search, logo, fileSelector, edit, loading, close, downarrow, user, job, facebook, instagram, twitter, linkedin, menu }
