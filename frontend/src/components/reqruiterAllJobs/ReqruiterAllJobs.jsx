@@ -19,7 +19,8 @@ function ReqruiterAllJobs() {
           credentials: "include",
           headers: {
 
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+             'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
           }
 
         })
@@ -53,7 +54,8 @@ function ReqruiterAllJobs() {
         credentials: "include",
         headers: {
 
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+           'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
         },
         body: JSON.stringify({ _id })
       })

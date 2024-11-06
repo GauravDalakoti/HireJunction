@@ -58,6 +58,10 @@ function AddNewJobs() {
 
                 method: "POST",
                 credentials: "include",
+                headers:{
+
+                    'Authorization': `Bearer ${localStorage.getItem("reqruiterToken")}`
+                },
                 body: formData
             })
 
