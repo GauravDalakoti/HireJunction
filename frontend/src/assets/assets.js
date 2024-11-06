@@ -9,7 +9,7 @@ import linkedin from "./linkedin.png"
 import user from "./user.png"
 import downarrow from "./downarrow.jpg"
 import edit from "./edit.png"
-import loading from "./loading.gif"
+import loading from "./loading.svg"
 import menu from "./menu.png"
 import close from "./close.png"
 
