@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 import app from "./src/app.js"
 import ConnectDB from "./src/db/dbConnection.js"
 
-dotenv.config({ path: "./.env" })
+dotenv.config({ path: ".env" })
 
 ConnectDB()
     .then(() => {
